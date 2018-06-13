@@ -18,10 +18,10 @@ breakpad官方地址为：https://chromium.googlesource.com/breakpad/breakpad，
 - 将.so文件和JNI mapping文件copy到项目
 
 编译so库时遇到的问题
-![image](C:\Android\笔记\1.png)
+![image](https://github.com/caimengru0807/learn-android/blob/master/image/1.PNG)
 解决方法：git clone https://chromium.googlesource.com/linux-syscall-support"
 将 linux_syscall_support.h 拷贝到 breakpad/src/third_party/lss
-![image](C:\Android\笔记\2.png)
+![image](https://github.com/caimengru0807/learn-android/blob/master/image/2.PNG)
 解决方法：breakpad最新代码需要使用NDK r11c 及以上版本编译
 
 ###  编译获得分析dmp文件的工具
@@ -110,6 +110,6 @@ Main()
 Main $1 $2  
 ```
 结构如下图：
-![image](C:\Android\笔记\3.png)
+![image](https://github.com/caimengru0807/learn-android/blob/master/image/3.PNG)
 运行./dump2text.sh '/home/cai/crash/447e0686-d922-1304-0954048f-67affb6c.dmp' crash.txt即能生成txt的崩溃信息。
 
